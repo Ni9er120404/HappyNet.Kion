@@ -2,11 +2,11 @@
 {
     public readonly struct Pixel
     {
-        public readonly IColor color;
+        public readonly IColor Color { get; }
 
         internal Pixel(IColor color)
         {
-            this.color = color;
+            Color = color;
         }
     }
 }
