@@ -1,6 +1,13 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+internal class Program
+{
+	private static void Main(string[] args)
+	{
+		WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-app.MapGet("/", () => "Hello World!");
+		WebApplication app = builder.Build();
 
-app.Run();
+		_ = app.MapGet("/", () => "Hello World!");
+
+		app.Run();
+	}
+}

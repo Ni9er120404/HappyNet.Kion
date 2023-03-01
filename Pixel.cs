@@ -1,12 +1,12 @@
 ﻿namespace HappyNet.Kion
 {
-    public readonly struct Pixel
-    {
-        public readonly IColor Color { get; }
+	public readonly struct Pixel
+	{
+		public readonly IColor Color { get; }
 
-        internal Pixel(IColor color)
-        {
-            Color = color;
-        }
-    }
+		internal Pixel(IColor color)
+		{
+			Color = color;
+		}
+	}
 }
